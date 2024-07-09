@@ -13,6 +13,7 @@ class PubUserController extends Controller
         $request->validate([
             'name'=>'required',
             'email'=>'required|email',
+            'phone'=>'required',
             'subject'=>'required',
             'message'=>'required',
         ]);
@@ -22,6 +23,7 @@ class PubUserController extends Controller
         '
         Name : '.$request->name.'<br>
         Email : '.$request->email.'<br>
+        Phone : '.$request->phone.'<br>
         Subject : '.$request->subject.'<br>
         Message : '.$request->message;
         Mail::to('contact@holyit.org')->send(new SendMail($subject, $body));

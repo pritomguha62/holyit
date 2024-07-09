@@ -7,7 +7,7 @@
   <title>
     Holy IT - @yield('title')
   </title>
-  <meta content="" name="description">
+  <meta content="Holy IT" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->

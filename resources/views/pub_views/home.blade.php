@@ -915,7 +915,11 @@
               <input type="email" class="form-control" name="email" placeholder="Your Email" required>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-6 ">
+              <input type="text" class="form-control" name="phone" placeholder="Your Phone" required>
+            </div>
+
+            <div class="col-md-6">
               <input type="text" class="form-control" name="subject" placeholder="Subject" required>
             </div>
 
