@@ -11,5 +11,9 @@ Route::get('/admin_panel', function () {
     return view('admin_views.dashboard');
 });
 
+Route::get('/invoice', function () {
+    return view('pub_views.invoice');
+});
+
 Route::post('/contact_us', [PubUserController::class, 'contact_us']
 )->name('contact_us');
